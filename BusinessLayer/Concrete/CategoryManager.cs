@@ -18,14 +18,14 @@ namespace BusinessLayer.Concrete
         }
         public void CategoryAddBL(Category p)
         {
-            if (p.CategoryName=="" || p.CategoryName.Length<=3 || p.CategoryDescription=="")
-            {
-                //hata Mesajı
-            }
-            else
-            {
-                repo.Insert(p);
-            }
+            //if (p.CategoryName=="" || p.CategoryName.Length<=3 || p.CategoryDescription=="")
+            //{
+            //    //hata Mesajı
+            //}
+            //else
+            //{
+               repo.Insert(p);
+            //}
 
         }
        
