@@ -137,6 +137,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StatisticsController.cs" />
     <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Controllers\WriterController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -182,6 +183,7 @@
     <Content Include="AdminLTE-3.0.4\dist\img\avatar2.png" />
     <Content Include="AdminLTE-3.0.4\dist\img\avatar3.png" />
     <Content Include="AdminLTE-3.0.4\dist\img\avatar5.png" />
+    <Content Include="AdminLTE-3.0.4\dist\img\ben.jpeg" />
     <Content Include="AdminLTE-3.0.4\dist\img\boxed-bg.jpg" />
     <Content Include="AdminLTE-3.0.4\dist\img\boxed-bg.png" />
     <Content Include="AdminLTE-3.0.4\dist\img\credit\american-express.png" />
@@ -2280,6 +2282,8 @@
     <Content Include="Views\AdminCategory\AddCategory.cshtml" />
     <Content Include="Views\AdminCategory\EditCategory.cshtml" />
     <Content Include="Views\Statistics\Index.cshtml" />
+    <Content Include="Views\Writer\Index.cshtml" />
+    <Content Include="Views\Writer\AddWriter.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
