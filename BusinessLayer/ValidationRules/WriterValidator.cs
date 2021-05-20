@@ -18,11 +18,13 @@ namespace BusinessLayer.ValidationRules
             RuleFor(x => x.WriterSurName).MinimumLength(3).WithMessage("Yazar soyadı en az 2 karakter olmalıdır!");
             RuleFor(x => x.WriterAbout).NotEmpty().WithMessage("Yazar hakkında boş olamaz!");
             RuleFor(x => x.WriterAbout).MinimumLength(2).WithMessage("Yazar hakkında en az 2 karakter olmalıdır!");
-            RuleFor(x => x.WriterAbout).Must(MustBeA).WithMessage("Hakkında kısmında mutlaka A harfı olmalıdır!");
+            //RuleFor(x => x.WriterAbout).Must(MustBeA).WithMessage("Hakkında kısmında mutlaka A harfı olmalıdır!");
             RuleFor(x => x.WriterMail).NotEmpty().WithMessage("Yazar mail boş olamaz!");
             RuleFor(x => x.WriterMail).EmailAddress().WithMessage("Yazar maili mail adresi türünde olmalıdır!");
             RuleFor(x => x.WriterPassword).NotEmpty().WithMessage("Yazar şifre boş olamaz!");
             RuleFor(x => x.WriterPassword).MinimumLength(3).WithMessage("Yazar şifre en az 3 karakter olmalıdır!");
+            RuleFor(x => x.WriterTitle).NotEmpty().WithMessage("Yazar Ünvanı kısmı boş olamaz!");
+
         }
 
         private bool MustBeA(string arg)
